@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalDataFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:padding="5dp">
+
+                <!-- FECHA ATRAS -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Back_comu"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:drawableBottom="@drawable/back_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <!-- COMMUNITY -->
+
+                <!-- Learn Stock, Educate the world -->
+
+                <TextView
+                    android:id="@+id/community"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/btn_Back_comu"
+
+
+                    android:paddingTop="20dp"
+                    android:text="@string/comunity"
+                    android:textAllCaps="false"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/learn_stock_educate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community"
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:text="@string/learn_stock"
+                    android:textSize="38sp" />
+
+                <!-- BUSQUEDA -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/search"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="10dp"
+
+                    android:layout_below="@+id/learn_stock_educate"
+
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:counterTextColor="@color/counter_text"
+                    android:paddingTop="5dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+
+                    android:hint="@string/search"
+                    app:startIconDrawable="@drawable/forget_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:paddingEnd="40dp"
+                    android:paddingStart="40dp"
+                    app:endIconMode="clear_text"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="15"
+                        android:inputType="text|number"
+
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+
+                        android:textColor="#2962FF"
+                        android:textColorHint="@color/name"
+                        tools:ignore="TextContrastCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</ScrollView>

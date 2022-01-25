@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalDataFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:padding="5dp">
+
+            <!-- FECHA ATRAS -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_Back"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="30dp"
+                android:drawableBottom="@drawable/back_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <!-- PERSONAL DATA -->
+            <TextView
+                android:id="@+id/my_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="71dp"
+                android:layout_toEndOf="@+id/btn_Back"
+
+
+                android:paddingTop="20dp"
+                android:text="@string/personal_data"
+                android:textAllCaps="false"
+                android:textSize="30sp" />
+
+            <!-- IMAGEN -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imagen"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_below="@+id/my_name"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="25dp">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/daniel" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- LOGO CAMARA -->
+            <!-- PARA HACER LO DE LA FOTO -->
+            <!--
+                            android:onClick="tomarFoto"
+
+            -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/edit_image"
+
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:background="@drawable/stylo_bordes_text"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_below="@+id/my_name"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="80dp"
+                android:layout_toEndOf="@+id/imagen"
+                app:icon="@drawable/camara_32">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+            <!-- YOUR NAME -->
+            <TextView
+                android:id="@+id/yourname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagen"
+
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/your_name"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yourname"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/stylo_bordes_text"
+                android:backgroundTint="@color/fondo_color"
+                android:text="@string/name"
+                android:textSize="22sp" />
+
+            <!-- DATE BIRTHAY -->
+            <TextView
+                android:id="@+id/birthay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/date_birthay"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/cumple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birthay"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/stylo_bordes_text"
+                android:backgroundTint="@color/fondo_color"
+                android:text="@string/cumple"
+                android:textSize="22sp" />
+
+            <!-- YOUR JOB -->
+            <TextView
+                android:id="@+id/job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumple"
+
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/your_job"
+
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/trabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job"
+
+                android:text="@string/support"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/stylo_bordes_text"
+                android:backgroundTint="@color/fondo_color"
+                android:textSize="22sp" />
+
+            <!-- MONEY -->
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trabajo"
+
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/month_money"
+
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/dinero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/money"
+
+                android:layout_marginStart="20dp"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/stylo_bordes_text"
+                android:backgroundTint="@color/fondo_color"
+                android:text="@string/money"
+                android:textSize="22sp" />
+
+
+            <!-- GENDER -->
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dinero"
+
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/gender"
+
+                android:textSize="22sp" />
+
+            <!-- MALE -->
+            <RadioButton
+                android:id="@+id/rdMale"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/gender"
+
+
+
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="130dp"
+
+                android:background="@drawable/stylo_bordes_text"
+
+                android:backgroundTint="@color/fondo_color"
+                android:text="@string/male"
+                android:textSize="14sp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <!-- FEMALE -->
+            <RadioButton
+                android:id="@+id/rdFemale"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/gender"
+                android:layout_marginStart="40dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="@color/fondo_color"
+
+                android:background="@drawable/stylo_bordes_text"
+
+                android:text="@string/female"
+                android:textSize="14sp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</ScrollView>

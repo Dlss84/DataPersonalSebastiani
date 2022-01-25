@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:paddingTop="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/daniel"
+                    tools:ignore="ImageContrastCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- NOMBRE-->
+            <TextView
+                android:id="@+id/my_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/profile_image"
+
+                android:text="@string/name"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/my_name"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+
+                android:layout_toEndOf="@+id/profile_image"
+
+                android:text="@string/level"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <!-- BOTON DE SALIDA -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/exit"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/my_name"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_toEndOf="@+id/text_personal_data"
+                android:text="@string/exit" />
+
+            <!-- PERSONAL DATA-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/personal_data"
+
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/level"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+
+                app:startIconDrawable="@drawable/people_24"></com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_personal_data"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/level"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="0dp"
+
+
+                android:layout_toEndOf="@+id/personal_data"
+                android:text="@string/personal_data"
+                android:textColor="@color/text_color"
+                android:textSize="22sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mayor_personal_data"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_below="@+id/level"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/text_personal_data"
+                android:drawableBottom="@drawable/more_than_24" />
+
+            <!-- SETTINGS -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/settings"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personal_data"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:startIconDrawable="@drawable/setting_24"></com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_setting"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personal_data"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/text_color"
+
+
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/settings"
+                android:text="@string/settings"
+                android:textSize="22sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_mayor_setting"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_below="@+id/mayor_personal_data"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="46dp"
+
+                android:layout_toEndOf="@+id/text_setting"
+                android:drawableBottom="@drawable/more_than_24" />
+
+            <!-- E-STATEMENT-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/statement"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:startIconDrawable="@drawable/statement_24"></com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_statement"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/text_color"
+
+
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/statement"
+                android:text="@string/e_statement"
+                android:textSize="22sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mayor_statement"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/btn_mayor_setting"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="46dp"
+
+                android:layout_toEndOf="@+id/text_setting"
+                android:drawableBottom="@drawable/more_than_24" />
+
+
+            <!-- REFFERAL CODE-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/refferal"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statement"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:startIconDrawable="@drawable/refferal_24"></com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_refferal"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statement"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/text_color"
+
+
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/statement"
+                android:text="@string/refferal_code"
+                android:textSize="22sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_mayor_refferal"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/mayor_statement"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="46dp"
+
+                android:layout_toEndOf="@+id/text_setting"
+                android:drawableBottom="@drawable/more_than_24" />
+
+            <!-- FAQS-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/faqs"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/refferal"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:startIconDrawable="@drawable/faqs_24"></com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_faqs"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/refferal"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/text_color"
+
+
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/faqs"
+                android:text="@string/faqs"
+                android:textSize="22sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_mayor_faqs"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/btn_mayor_refferal"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="46dp"
+
+                android:layout_toEndOf="@+id/text_setting"
+                android:drawableBottom="@drawable/more_than_24" />
+
+
+            <!-- OUR HANDBOOK-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/handbook"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faqs"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:startIconDrawable="@drawable/handbook_24"></com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_handbook"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faqs"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/text_color"
+
+
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/faqs"
+                android:text="@string/our_handbook"
+                android:textSize="22sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_mayor_handbook"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/btn_mayor_faqs"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="46dp"
+
+                android:layout_toEndOf="@+id/text_setting"
+                android:drawableBottom="@drawable/more_than_24" />
+
+
+            <!-- COMMUNITY -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/community"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/handbook"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:startIconDrawable="@drawable/community_24"></com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_community"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/handbook"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/text_color"
+
+
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/faqs"
+                android:text="@string/community"
+                android:textSize="22sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mayor_community"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/btn_mayor_handbook"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="41dp"
+
+                android:layout_toEndOf="@+id/text_setting"
+                android:drawableBottom="@drawable/more_than_24" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFeel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/text_community"
+                android:layout_alignStart="@+id/community"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+
+                android:backgroundTint="@color/feel"
+                android:drawableLeft="@drawable/headphone_64"
+                android:text="@string/feel"
+                android:textColor="@color/feel_text"
+                android:textSize="10dp"
+                app:cornerRadius="10dp"
+
+                app:strokeColor="@color/feel">
+
+            </com.google.android.material.button.MaterialButton>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
