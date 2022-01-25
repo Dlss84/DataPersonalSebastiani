@@ -19,6 +19,8 @@
 
     <string name="exit">Exit</string>
 
+    <string name="photo">New Pic</string>
+
     <string name="your_name">Your Name</string>
 
     <string name="date_birthay">Date of Birth</string>
@@ -50,6 +52,5 @@
     <string name="comunity">Community</string>
     <string name="learn_stock">Learn Stock, Educate the world</string>
     <string name="search">Search something ...</string>
-
 
 </resources>
