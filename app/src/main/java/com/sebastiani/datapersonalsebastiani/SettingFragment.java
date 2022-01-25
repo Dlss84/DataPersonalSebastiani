@@ -22,7 +22,7 @@ public class SettingFragment extends Fragment {
         btnSettingButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                //((NavigationHost)getActivity()).navigateTo(new PersonalDataFragment(), false);
+                ((NavigationHost)getActivity()).navigateTo(new PersonalDataFragment(), false);
             }
         });
 

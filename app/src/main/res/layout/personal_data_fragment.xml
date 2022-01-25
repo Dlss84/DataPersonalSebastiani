@@ -84,18 +84,18 @@
 
             -->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/edit_image"
+                android:id="@+id/button_camara"
 
                 style="@style/Widget.MaterialComponents.Button.TextButton"
-                android:background="@drawable/stylo_bordes_text"
-
                 android:layout_width="50dp"
-                android:layout_height="50dp"
 
+                android:layout_height="50dp"
                 android:layout_below="@+id/my_name"
+
                 android:layout_marginStart="-10dp"
                 android:layout_marginTop="80dp"
                 android:layout_toEndOf="@+id/imagen"
+                android:background="@drawable/stylo_bordes_text"
                 app:icon="@drawable/camara_32">
 
             </com.google.android.material.button.MaterialButton>

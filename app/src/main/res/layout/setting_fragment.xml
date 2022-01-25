@@ -75,6 +75,29 @@
                 android:textAllCaps="false"
                 android:textSize="16sp" />
 
+            <!-- LOGO CAMARA -->
+            <!-- PARA HACER LO DE LA FOTO -->
+            <!--
+                            android:onClick="tomarFoto"
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/edit_image"
+
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="50dp"
+
+                android:layout_height="50dp"
+                android:layout_below="@+id/my_name"
+
+                android:layout_marginStart="-20dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:background="@drawable/stylo_bordes_text"
+                app:icon="@drawable/camara_32">
+
+            </com.google.android.material.button.MaterialButton>
+            -->
             <!-- BOTON DE SALIDA -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/exit"
